@@ -20,10 +20,10 @@ class Producto:
             -descripcion(str): descripcion del producto.
         """
         self._codigo_autoincremental() # llamado de la funcion
-        self.codigo = Producto.codigo # asignacion del codigo unico para el objeto
-        self.producto = producto # asignacion del atributo de instancia del nombre del producto
-        self.precio = precio # asignancion del atributo de instancia precio
-        self.stock = stock # asignancion del atributo de instancia stock
+        self._codigo = Producto.codigo # asignacion del codigo unico para el objeto
+        self._producto = producto # asignacion del atributo de instancia del nombre del producto
+        self._precio = precio # asignancion del atributo de instancia precio
+        self._stock = stock # asignancion del atributo de instancia stock
         
 
     def _codigo_autoincremental(self) ->None:
