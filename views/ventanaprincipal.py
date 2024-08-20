@@ -6,14 +6,14 @@ class VentanaPrincipal(Tk):
     tkinter
     """
 
-    def __init__(self) -> None:
+    def __init__(self:Tk) -> None:
         """
         Metodo constructor de la ventana principal. Inicializa todos los widgets
         de la aplicacion gestor de inventario.
         """
-        self._configuracion()
+        self.configuracion()
 
-    def _configuracion(self) -> None:
+    def configuracion(self) -> None:
         """
         Carga las configuraciones basicas de la ventana principal.
         """
