@@ -19,14 +19,14 @@ class Producto:
             -stock(int): cantidad del producto en stock.
             -descripcion(str): descripcion del producto.
         """
-        self._codigo_autoincremental() # llamado de la funcion
+        self.codigo_autoincremental() # llamado de la funcion
         self._codigo = Producto.codigo # asignacion del codigo unico para el objeto
         self._producto = producto # asignacion del atributo de instancia del nombre del producto
         self._precio = precio # asignancion del atributo de instancia precio
         self._stock = stock # asignancion del atributo de instancia stock
         
 
-    def _codigo_autoincremental(self) ->None:
+    def codigo_autoincremental(self) ->None:
         """
         Metodo de clase que incrementa en uno el atributo de clase con cada
         instancia creada de la clase Producto.
