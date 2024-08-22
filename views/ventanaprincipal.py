@@ -1,6 +1,7 @@
 from tkinter import Tk
 from tkinter import Button
 from tkinter import Frame
+from tabla import TablaProducto
 
 class VentanaPrincipal(Tk):
     """
@@ -36,6 +37,16 @@ class VentanaPrincipal(Tk):
         self.tabla_frame.configure(bg="#D7C3F1")
         self.tabla_frame.grid(row=3, column=0, sticky="nsew")
 
+        # configuracion grilla tabla_frame
+        self.tabla_frame.grid_columnconfigure(0, weight=1)
+        self.tabla_frame.grid_rowconfigure(0, weight=1)
+
+        # configuracion grilla botones_frame
+        self.botones_frame.grid_columnconfigure(0, weight=1)
+        self.botones_frame.grid_columnconfigure(1, weight=1)
+        self.botones_frame.grid_columnconfigure(2, weight=1)
+        self.botones_frame.grid_rowconfigure(0, weight=1)
+
         # boton de registrar producto 
         self.registrar_btn = Button(self.botones_frame) # instancia del boton registrar
         self.registrar_btn.configure(bg="#0d6efd")
@@ -64,6 +75,9 @@ class VentanaPrincipal(Tk):
         self.registrar_btn.grid(row=0, column=0)
         self.editar_btn.grid(row=0, column=1)
         self.eliminar_btn.grid(row=0, column=2)
+
+        # Tabla 
+        self.tabla = TablaProducto(self.tabla_frame)
         
-""" win = VentanaPrincipal()
-win.mainloop() """
+win = VentanaPrincipal()
+win.mainloop()
