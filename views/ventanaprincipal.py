@@ -1,7 +1,9 @@
 from tkinter import Tk
 from tkinter import Button
 from tkinter import Frame
-from tabla import TablaProducto
+
+from .formulario import Formulario
+from .tabla import TablaProducto
 
 class VentanaPrincipal(Tk):
     """
@@ -78,6 +80,3 @@ class VentanaPrincipal(Tk):
 
         # Tabla 
         self.tabla = TablaProducto(self.tabla_frame)
-        
-win = VentanaPrincipal()
-win.mainloop()
