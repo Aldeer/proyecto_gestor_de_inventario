@@ -27,5 +27,5 @@ class TablaProducto(Treeview):
     def cabecera(self) -> None:
         self.configure(show="headings")
         for cabecera in CABECERA:
-            self.heading(cabecera, text=cabecera)
+            self.heading(cabecera, text=cabecera, anchor="w")
 
