@@ -62,3 +62,7 @@ class Producto:
             self._stock = stock
         else:
             raise ValueError("Valor del campo stock es incorrecto")
+        
+    def tupla_datos(self) -> tuple:
+        return (self.codigo, self.producto, self.precio, self.stock)
+    
