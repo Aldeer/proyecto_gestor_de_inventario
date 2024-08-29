@@ -23,3 +23,6 @@ class Inventario:
             self._productos.append(producto)
         else:
             raise ValueError("El argumento no es valido")
+        
+    def mostrar_inventario(self) -> List[Producto]:
+        return self._productos
