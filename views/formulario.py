@@ -27,7 +27,7 @@ class Formulario(Toplevel):
 
         # configuracion de ventana
         self.title("Formulario de Registro")
-        self.geometry("200x300")
+        self.geometry("400x300")
 
         # configuracion de la grilla de la ventana
         self.grid_columnconfigure(0, weight=1)
